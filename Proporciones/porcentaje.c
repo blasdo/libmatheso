@@ -15,3 +15,9 @@ float addPorcentaje(float porcentaje, float actual)
 	toAdd = porcentajeDe(porcentaje, actual);
 	return (actual + toAdd);
 }
+float restarProcentaje(float porcentaje, float actual)
+{
+	float aRestar;
+	aRestar = porcentajeDe(porcentaje, actual);
+	return (actual - aRestar);
+}
