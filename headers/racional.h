@@ -1,8 +1,9 @@
 #ifndef RACIONAL_H
 #define RACIONAL_H
 #include <limits.h>
-#define RACIONAL_MAX SHORT_MAX
-#define RACIONAL_MIN SHORT_MIN
+#include <errno.h>
+#define RACIONAL_MAX SHRT_MAX
+#define RACIONAL_MIN SHRT_MIN
 
 typedef	struct racional
 {
