@@ -1,14 +1,13 @@
 #ifndef RACIONAL_H
-#define RACIONAL_H
-#include <limits.h>
-#include <errno.h>
-#define RACIONAL_MAX SHRT_MAX
-#define RACIONAL_MIN SHRT_MIN
+# define RACIONAL_H
+# include "common.h"
+# define RACIONAL_MAX SHRT_MAX
+# define RACIONAL_MIN SHRT_MIN
 
 typedef	struct racional
 {
 	short	numerador;
-	short	denuminador;
+	short	denominador;
 }				racional_t;
 
 /*
@@ -17,7 +16,10 @@ typedef	struct racional
 
 // crea un nuevo numero racional con numerador "numerador" y denominador "denominador"
 racional_t	r_new_racional(short numerador, short denominador);
-// convierte un entero a racional
+/*
+* convierte un entero a racional
+* ATENCIÓN, CAST FORZOSO NO CONTROLADO, SI EL NUMERO SUPERA SHRT_MAX O ES MENOR A SHRT_MIN EL COMPORTAMIENTO ES INDEFINIDO
+*/
 racional_t	r_int_a_racional(int entero);
 
 /*
