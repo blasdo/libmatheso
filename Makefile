@@ -1,6 +1,12 @@
-SRCS	= srcs/racional.c
+SRCS	=	srcs/racional.c\
+			srcs/mcm_mcd.c
+
 OBJS	= $(patsubst srcs/%.c,objs/%.o,$(SRCS))
-NAME	= libmatheso
+
+NAME	= libmatheso.a
+
+objs/%.o: srcs/%.c
+	$(CC) -Iheaders $(CFLAGS) -c $< -o $@
 
 all:	$(NAME)
 

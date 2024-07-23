@@ -26,13 +26,17 @@ racional_t	r_int_a_racional(int entero);
 * Operaciones con racionales
 */
 
-// suma dos numeros racionales
+// Suma dos numeros racionales
+// Riesgo de overflow no controlado
 racional_t	r_sumar(racional_t n1, racional_t n2);
-// resta dos numeros racionales
+// Resta dos numeros racionales
+// Riesgo de overflow no controlado
 racional_t	r_restar(racional_t n1, racional_t n2);
-// multiplica dos numeros racionales
+// Multiplica dos numeros racionales
+// Riesgo de overflow no controlado
 racional_t	r_multiplicar(racional_t n1, racional_t n2);
-// divide dos numeros racionales
+// Divide dos numeros racionales
+// Riesgo de overflow no controlado
 racional_t	r_dividir(racional_t n1, racional_t n2);
-
+racional_t	r_simplificar(racional_t n);
 #endif
