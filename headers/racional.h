@@ -35,10 +35,4 @@ racional_t	r_multiplicar(racional_t n1, racional_t n2);
 // divide dos numeros racionales
 racional_t	r_dividir(racional_t n1, racional_t n2);
 
-/*
-* Input/output
-*/
-
-// imprime un numero racional
-void		print_racional(racional_t racional);
 #endif
