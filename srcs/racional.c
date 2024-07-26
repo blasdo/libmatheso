@@ -25,7 +25,7 @@ racional_t	r_sumar(racional_t n1, racional_t n2)
 	if (n1.denominador != n2.denominador)
 	{
 		int com_den = mcm(n1.denominador, n2.denominador);
-		n1.numerador = n1.numerador * (com_den / n2.denominador);
+		n1.numerador = n1.numerador * (com_den / n1.denominador);
 		n2.numerador = (n2.numerador * (com_den / n2.denominador));
 		n1.denominador = (short)com_den;
 		n2.denominador = (short) com_den;
